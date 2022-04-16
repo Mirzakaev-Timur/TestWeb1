@@ -15,8 +15,8 @@ public class WebTest {
 
     @Test
     void shouldSubmitRequest() {
-        $("[data-test-id=name] input").setValue("Иванова-Сидорова Анна-Мария");
-        $("[data-test-id=phone] input").setValue("+79008007755");
+        $("[data-test-id=name] input").setValue("Иванов-Петров Виктор");
+        $("[data-test-id=phone] input").setValue("+79179177766");
         $("[data-test-id=agreement]").click();
         $("[type=button]").click();
         $("[data-test-id=order-success]").shouldHave(Condition.exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
