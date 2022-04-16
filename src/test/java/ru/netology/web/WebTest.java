@@ -12,7 +12,6 @@ public class WebTest {
     open("http://localhost:9999/");
 
 }
-
     @Test
     void shouldSubmitRequest() {
         $("[data-test-id=name] input").setValue("Иванов-Петров Виктор");
